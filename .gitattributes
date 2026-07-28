@@ -1,3 +1,4 @@
 *.csv* filter=lfs diff=lfs merge=lfs -text
 *.sqlite* filter=lfs diff=lfs merge=lfs -text
 data/20260309_mafft_akr_filtered_msa_HK_50-107_table.csv filter=lfs diff=lfs merge=lfs -text
+data/20260309_mafft_akr_filtered_msa_HK_50-107[[:space:]]GNN_default_node filter=lfs diff=lfs merge=lfs -text
