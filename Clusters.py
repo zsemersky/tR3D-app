@@ -74,7 +74,7 @@ def tR3D_app():
             ssn_range = st.slider(
                     'Select SSN Cluster Numbers to filter', 
                     0, int(df['SSN Cluster Number'].max()),
-                    (0, int(sorted(df['SSN Cluster Number'].unique())[19] if len(df['SSN Cluster Number'].unique())>20 else df['SSN Cluster Number'].unique().max())), 
+                    (0, int(sorted(df['SSN Cluster Number'].unique())[99] if len(df['SSN Cluster Number'].unique())>100 else df['SSN Cluster Number'].unique().max())), 
                     )
             df = df.loc[(df['SSN Cluster Number']>=ssn_range[0])&(df['SSN Cluster Number']<=ssn_range[1])]
             
