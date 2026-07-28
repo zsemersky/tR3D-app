@@ -21,8 +21,8 @@ from visualizations import make_bar, make_summary_bar
 
 def tR3D_app():
     #Input File Here 2x
-    st.session_state.df = pd.read_csv(r"data/220902_IPR018163_Uniref50_43_480max_Cleaned_GNN_Final.csv") 
-    df = pd.read_csv(r"data/220902_IPR018163_Uniref50_43_480max_Cleaned_GNN_Final.csv") 
+    st.session_state.df = pd.read_csv(r"20260309_mafft_akr_filtered_msa_HK_50-107_table.csv") 
+    df = pd.read_csv(r"data/20260309_mafft_akr_filtered_msa_HK_50-107_table.csv") 
     
     #This is the only time this thing shows up, can we remove it? 
     unique_pfam = df.groupby(by='Pfam Description')['Pfam Description'].count()
