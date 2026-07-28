@@ -113,7 +113,7 @@ def tR3D_app():
                 top_shared_names = subset_df['shared name'].unique()[:selected_number_pfams]
                 subset_df = subset_df.loc[subset_df['shared name'].isin(top_shared_names)]
             temp_fig = make_bar(subset_df.sort_values('Co-occurrence'))
-            temp_fig.update_layout(margin=dict(l=350),yaxis=dict(automargin=True))
+            temp_fig.update_layout(yaxis=dict(automargin=True))
             st.plotly_chart(temp_fig)
             
         st.write('')
